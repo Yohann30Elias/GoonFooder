@@ -1,6 +1,8 @@
 package ch.zli.yr.goonfooder.domain;
 
 import jakarta.persistence.*;
+
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -16,7 +18,7 @@ public class MediaItem {
     private Category category;
 
     @ManyToMany
-    private List<Tag> tags;
+    private List<Tag> tags = new ArrayList<>();
 
     // Getter & Setter
     public Long getId() { return id; }
