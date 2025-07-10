@@ -13,7 +13,6 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class TestDataConfig {
 
-    @Bean
     CommandLineRunner loadTestData(
             CategoryRepository categoryRepo,
             TagRepository tagRepo,
